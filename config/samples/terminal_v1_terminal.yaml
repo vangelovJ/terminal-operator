@@ -1,0 +1,7 @@
+apiVersion: terminal.terminal.com/v1
+kind: Terminal
+metadata:
+  name: terminal-sample
+spec:
+  # Add fields here
+  foo: bar

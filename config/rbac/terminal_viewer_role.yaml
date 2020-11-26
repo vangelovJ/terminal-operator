@@ -1,0 +1,20 @@
+# permissions for end users to view terminals.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: terminal-viewer-role
+rules:
+- apiGroups:
+  - terminal.terminal.com
+  resources:
+  - terminals
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - terminal.terminal.com
+  resources:
+  - terminals/status
+  verbs:
+  - get
